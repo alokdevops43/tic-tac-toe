@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Tic Tac Toe</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="normal-theme">
+
+    <!-- Animated Background -->
+    <div class="bg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <main class="game-container">
+
+        <!-- Heading -->
+        <header class="game-header">
+            <h1>🎮 Tic Tac Toe</h1>
+            <p>Modern Animated Edition</p>
+        </header>
+
+        <!-- Scoreboard -->
+        <section class="scoreboard">
+
+            <div class="score-card x-card">
+                <span class="score-label">Player X</span>
+                <h2 id="xScore">0</h2>
+            </div>
+
+            <div class="score-card draw-card">
+                <span class="score-label">Draw</span>
+                <h2 id="drawScore">0</h2>
+            </div>
+
+            <div class="score-card o-card">
+                <span class="score-label">Player O</span>
+                <h2 id="oScore">0</h2>
+            </div>
+
+        </section>
+
+        <!-- Turn Indicator -->
+        <section class="turn-box">
+
+            <div class="turn-dot"></div>
+
+            <h3 id="status">
+                Player <span>X</span>'s Turn
+            </h3>
+
+        </section>
+
+        <!-- Game Board -->
+        <section class="board" id="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </section>
+
+        <!-- Controls -->
+        <section class="controls">
+
+            <button id="restartBtn" class="primary-btn">
+                🔄 Restart Game
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- Win / Draw Popup -->
+    <div class="popup-overlay hidden" id="popup">
+
+        <div class="popup">
+
+            <div class="popup-icon" id="popupIcon">
+                🏆
+            </div>
+
+            <h2 id="popupTitle">
+                Player X Wins!
+            </h2>
+
+            <p id="popupText">
+                Congratulations!
+            </p>
+
+            <button id="playAgainBtn" class="popup-btn">
+                Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti"></div>
+
+    <!-- Audio (Optional) -->
+    <!--
+    <audio id="winSound" src="win.mp3"></audio>
+    <audio id="drawSound" src="draw.mp3"></audio>
+    <audio id="clickSound" src="click.mp3"></audio>
+    -->
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
