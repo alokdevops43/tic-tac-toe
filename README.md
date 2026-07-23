@@ -8,10 +8,15 @@ A modern, responsive, and animated **Tic Tac Toe** game built using **HTML, CSS,
 
 > Add your GitHub Pages link here after deployment.
 
-```[
+```
 https://alokdevops43.github.io/tic-tac-toe/
+```
+
+---
 
 
+
+---
 
 ## ✨ Features
 
@@ -47,6 +52,7 @@ tic-tac-toe/
 ├── index.html
 ├── style.css
 ├── script.js
+
 
 
 ## 💡 Future Improvements
@@ -97,10 +103,4 @@ This project is licensed under the **MIT License**.
 
 ## 👨‍💻 Author
 
-**Alok Kumar**
-
-
-
-
-
-⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
+**Alok 
