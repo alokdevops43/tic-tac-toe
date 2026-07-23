@@ -4,15 +4,9 @@ A modern, responsive, and animated **Tic Tac Toe** game built using **HTML, CSS,
 
 ---
 
-## 🚀 Live Demo
 
-> Add your GitHub Pages link here after deployment.
-
-```
 https://alokdevops43.github.io/tic-tac-toe/
-```
 
----
 
 
 
